@@ -123,11 +123,7 @@ html, body {
 
 .div {
     display: flex;
-<<<<<<< HEAD
     font-size: 0.6em;
-=======
-    font-size: 0.5em;
->>>>>>> 0ce1ca1a6b5d2f984dd07e6c84c3de1cd7238a1d
     justify-content: flex-end;
     font-weight: 400;
     gap: 5px;
@@ -136,13 +132,9 @@ html, body {
 
 .date {
     margin-top: 6px;
-<<<<<<< HEAD
     font-size: 0.5rem;
     color: #e6cfa7;
-=======
-    font-size: 0.3rem;
-    color: #555555;
->>>>>>> 0ce1ca1a6b5d2f984dd07e6c84c3de1cd7238a1d
+
 }
 
 /* Media Queries for Responsive Design */
@@ -223,11 +215,7 @@ html, body {
     }
 
     .wrapper.open .letter{
-<<<<<<< HEAD
         height: 400px;
-=======
-        height: 240px;
->>>>>>> 0ce1ca1a6b5d2f984dd07e6c84c3de1cd7238a1d
     }
 
     .heart {
