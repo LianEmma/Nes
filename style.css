@@ -220,7 +220,7 @@ html, body {
     }
 
     .wrapper.open .letter{
-        min-height: 400px;
+        min-height: 500vh;
     }
 
     .heart {
@@ -241,6 +241,6 @@ html, body {
 @media (max-width: 375px){
     .wrapper.open .letter{
         overflow: scroll;
-        min-height: 60vh;
+        min-height: 500px;
     }
 }
