@@ -206,9 +206,7 @@ html, body {
     }
 
     .envelop .letter {
-        font-size: 0.8em;
-        transform: scale(0.5);
-        height: 250px;
+        height: 150px;
     }
 
     .envelop .letter .text {
@@ -216,7 +214,7 @@ html, body {
     }
 
     .wrapper.open .letter{
-        height: 400px;
+        height: 250px;
     }
 
     .heart {
