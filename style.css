@@ -116,6 +116,7 @@ html, body {
 .wrapper.open .envelop .letter {
     bottom: 100px;
     transform: scale(2);
+    transform-origin: top center; /* Ensures scaling starts from the top */
     transition-delay: 1s;
     z-index: 999;
     overflow: visible;
@@ -219,7 +220,7 @@ html, body {
     }
 
     .wrapper.open .letter{
-        height: 300px;
+        min-height: 380px;
     }
 
     .heart {
@@ -233,4 +234,13 @@ html, body {
         z-index: 5;
     }
     
+}
+
+
+
+@media (max-width: 375px){
+    .wrapper.open .letter{
+        overflow: scroll;
+        min-height: 55vh;
+    }
 }
