@@ -215,12 +215,12 @@ html, body {
     } */
 
     .envelop .letter .text {
-        font-size: 0.5em;
+        font-size: 0.6em;
         margin-bottom: 5px;
     }
 
     .wrapper.open .letter{
-        min-height: 380px;
+        min-height: 400px;
     }
 
     .heart {
@@ -241,6 +241,6 @@ html, body {
 @media (max-width: 375px){
     .wrapper.open .letter{
         overflow: scroll;
-        min-height: 55vh;
+        min-height: 60vh;
     }
 }
