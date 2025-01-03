@@ -208,10 +208,11 @@ html, body {
     .envelop .letter {
         font-size: 0.8em;
         transform: scale(0.5);
+        height: 250px;
     }
 
     .envelop .letter .text {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     .wrapper.open .letter{
