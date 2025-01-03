@@ -124,7 +124,7 @@ html, body {
 
 .wrapper.open .envelop .letter {
     position: absolute;
-    top: -400%; /* Position relative to the top */
+    top: -200%; /* Position relative to the top */
     left: 50%;
     transform: translateX(-35%) scale(1.8); /* Center horizontally, scale */
     transform-origin: top center; /* Scale from the top */
