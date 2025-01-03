@@ -205,16 +205,16 @@ html, body {
         border-right: 130px solid #e6cfa7;
     }
 
-    .envelop .letter {
+    /* .envelop .letter {
         height: 150px;
-    }
+    } */
 
     .envelop .letter .text {
         font-size: 0.5em;
     }
 
     .wrapper.open .letter{
-        height: 250px;
+        height: 150px;
     }
 
     .heart {
