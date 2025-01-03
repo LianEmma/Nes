@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background: #fefefe;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    background: #f5edd1;
+}
+
+.wrapper .envelop::before,
+.wrapper .envelop::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    transition: all 0.5s ease-in-out 0.7s;
+    z-index: 4;
+}
+
+.wrapper .envelop::before {
+    border-top: 130px solid #ecdeb8;
+    border-left: 212px solid transparent;
+    border-right: 212px solid transparent;
+}
+
+.wrapper .envelop::after {
+    border-top: 130px solid transparent;
+    border-left: 212px solid #e6cfa7;
+    border-bottom: 100px solid #e6cfa7;
+    border-right: 212px solid #e6cfa7;
+}
+
+.wrapper .envelop {
+    position: relative;
+    width: 425px;
+    height: 230px;
+}
+
+.envelop .letter {
+    position: absolute;
+    width: 64%;
+    height: 100%;
+    background: #fff;
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+    right: 20%;
+    bottom: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.envelop .letter .text {
+    color: #333;
+    font-size: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -60%) rotate(45deg);
+    z-index: 5;
+}
+
+.heart::before,
+.heart::after {
+    position: absolute;
+    content: '';
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -7.5px;
+}
+
+.heart::after {
+    right: 7.5px;
+}
+
+.wrapper.open .heart {
+    transform: translate(-20%, -40%) rotate(230deg);
+    transition-delay: 1s;
+}
+
+.wrapper.open .envelop::before {
+    transform: rotateX(180deg);
+    z-index: 0;
+}
+
+.wrapper.open .envelop .letter {
+    bottom: 100px;
+    transform: scale(2);
+    transition-delay: 1s;
+    z-index: 999;
+    overflow: visible;
+}
+
+.div {
+    display: flex;
+    font-size: 0.6em;
+    justify-content: flex-end;
+    font-weight: 400;
+    gap: 5px;
+    color: orangered;
+}
+
+.date {
+    margin-top: 6px;
+    font-size: 0.5rem;
+    color: #e6cfa7;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 48%;
+    }
+
+    .wrapper .envelop {
+        height: 180px;
+    }
+
+    .wrapper .envelop::before {
+        border-top: 100px solid #ecdeb8;
+        border-left: 160px solid transparent;
+        border-right: 160px solid transparent;
+    }
+
+    .wrapper .envelop::after {
+        border-top: 100px solid transparent;
+        border-left: 160px solid #e6cfa7;
+        border-bottom: 80px solid #e6cfa7;
+        border-right: 160px solid #e6cfa7;
+    }
+
+    .envelop .letter {
+        padding: 1rem;
+        font-size: 0.9em;
+        transform: scale(0.5);
+    }
+
+    .envelop .letter .text {
+        font-size: 0.7em;
+    }
+
+    .wrapper.open .letter{
+        width: 150px;
+        position: absolute;
+        font-size: 0.6rem;
+        left: 20%;
+        height: 220px;
+    }
+}
+
+/* Adjust for very small screens (mobile) */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 58%;
+    }
+
+    .wrapper .envelop {
+        width: 100%;
+        height: 120px;
+    }
+
+    .wrapper .envelop::before {
+        border-top: 80px solid #ecdeb8;
+        border-left: 130px solid transparent;
+        border-right: 130px solid transparent;
+    }
+
+    .wrapper .envelop::after {
+        border-top: 80px solid transparent;
+        border-left: 130px solid #e6cfa7;
+        border-bottom: 60px solid #e6cfa7;
+        border-right: 130px solid #e6cfa7;
+    }
+
+    .envelop .letter {
+        font-size: 0.8em;
+        transform: scale(0.5);
+    }
+
+    .envelop .letter .text {
+        font-size: 0.6em;
+    }
+
+    .wrapper.open .letter{
+        height: 400px;
+    }
+
+    .heart {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: red;
+        top: 50%;
+        left: 65%;
+        transform: translate(-85%, -60%) rotate(45deg);
+        z-index: 5;
+    }
+    
+}
